@@ -26,7 +26,7 @@ Run the following commands to validate things are rolling as they should.
 lando ssh -s defaults -c "python --version | grep 3.7."
 
 # Should use the user specified patch version when set
-lando ssh -s patch -c "python --version | grep 3.5.6"
+lando ssh -s patch -c "python --version | grep 3.10.1"
 
 # Should run on port 80 by default
 lando ssh -s defaults -c "curl http://localhost | grep OPENTHEPASTANDPRESENT"
