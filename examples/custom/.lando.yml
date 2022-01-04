@@ -1,0 +1,11 @@
+name: lando-python-custom
+services:
+  custom:
+    type: python:3.6
+    port: 8000
+    command: python /app/http-server-custom.py
+  customssl:
+    type: python
+    port: 443
+    ssl: true
+    command: python /app/https-server.py

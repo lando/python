@@ -1,0 +1,9 @@
+name: lando-python-3
+services:
+  defaults:
+    type: python
+    command: python /app/http-server.py
+  patch:
+    type: python:3.5.6
+  cli:
+    type: python

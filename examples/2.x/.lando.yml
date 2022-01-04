@@ -1,0 +1,9 @@
+name: lando-python-2
+services:
+  defaults:
+    type: python:2.7
+    command: python /app/http-server.py
+  patch:
+    type: python:2.7.14
+  cli:
+    type: python:2.7
