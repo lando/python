@@ -3,12 +3,26 @@
 // Modules
 const _ = require('lodash');
 
+// Supported versions
+const supportedVersions = [
+  '3',
+  '3.11',
+  '3.10',
+  '3.9',
+  '3.8',
+  '3.7',
+  '3.7',
+  '3.6',
+  '3.5',
+  '2.7',
+];
+
 // Builder
 module.exports = {
   name: 'python',
   config: {
     version: '3.7',
-    supported: ['3', '3.7', '3.6', '3.5', '2.7'],
+    supported: supportedVersions,
     patchesSupported: true,
     legacy: ['2.7'],
     command: 'tail -f /dev/null',
