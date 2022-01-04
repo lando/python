@@ -23,10 +23,10 @@ Run the following commands to validate things are rolling as they should.
 
 ```bash
 # Should use 2.7 as the default version
-lando ssh -s defaults -c "python --version" | grep "2.7."
+lando ssh -s defaults -c "python --version 2>&1" | grep "2.7."
 
 # Should use the user specified patch version when set
-lando ssh -s patch -c "python --version" | grep "2.7.14"
+lando ssh -s patch -c "python --version 2>&1" | grep "2.7.14"
 ```
 
 Destroy tests
