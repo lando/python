@@ -52,9 +52,15 @@ jobs:
           mkdir -p ~/.lando/cache
           cp -f actions-lando-config.yml ~/.lando/config.yml
           echo false > ~/.lando/cache/report_errors
-      - name: Install Lando from GitHib
+          # This part here is cloning a second repository
+      - name: Checkout Lando CLI from  GitHub
+        uses: actions/checkout@v2
+        with:
+          repository: lando/cli
+          path: cli
+          ref: main
+      - name: Install Lando from GitHub Source
         run: |
-          gh repo clone lando/cli
           cd cli
           yarn build:cli
           sudo mv ./dist/@lando/cli /usr/local/bin/lando
