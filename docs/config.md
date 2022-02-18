@@ -1,46 +1,9 @@
 ---
-description: Add a highly configurable python service to Lando for local development with all the power of Docker and Docker Compose.
+title: Configuration
+description: Learn how to configure the Lando Python service.
 ---
 
-# Python
-
-[Python](https://www.python.org/) is a programming language that lets you work more quickly and integrate your systems more effectively.
-
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/config/services.html) top-level config in your [Landofile](https://docs.lando.dev/config/lando.html).
-
-[[toc]]
-
-## Supported versions
-
-*   [3](https://hub.docker.com/r/_/python/)
-*   **[3.7](https://hub.docker.com/r/_/python/)** **(default)**
-*   [3.6](https://hub.docker.com/r/_/python/)
-*   [3.5](https://hub.docker.com/r/_/python/)
-*   [custom](https://docs.lando.dev/config/services.html#advanced)
-
-## Legacy versions
-
-You can still run these versions with Lando but for all intents and purposes they should be considered deprecated (e.g. YMMV and do not expect a ton of support if you have an issue).
-
-*   [2.7](https://hub.docker.com/r/_/python/)
-
-## Patch versions
-
-::: warning Not officially supported!
-While we allow users to specify patch versions for this service, they are not *officially* supported, so if you use one, YMMV.
-:::
-
-To use a patch version, you can do something as shown below:
-
-```yaml
-services:
-  myservice:
-    type: python:3.5.6
-```
-
-But make sure you use one of the available [patch tags](https://hub.docker.com/r/library/python/tags/) for the underlying image we are using.
-
-## Configuration
+# Configuration
 
 Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](https://docs.lando.dev/config/services.html) to get a good handle on how the magicks work.
 
@@ -98,24 +61,3 @@ httpsd.socket = ssl.wrap_socket (httpsd.socket, server_side=True, certfile='/cer
 print('starting https server...')
 httpsd.serve_forever()
 ```
-
-## Path Considerations
-
-Lando will set the `PATH` hierarchy for this service as follows:
-
-```js
-[
-  // Line directly below is your PYTHONUSERBASE
-  '/var/www/.local/bin',
-  '/usr/local/sbin',
-  '/usr/local/bin',
-  '/usr/sbin',
-  '/usr/bin',
-  '/sbin',
-  '/bin',
-]
-```
-
-This is useful to note if you are not using absolute paths in any [tooling routes](https://docs.lando.dev/config/tooling.html) and are getting the unexpected version of a particular utility.
-
-<RelatedGuides tag="Python}"/>
