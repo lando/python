@@ -61,3 +61,34 @@ httpsd.socket = ssl.wrap_socket (httpsd.socket, server_side=True, certfile='/cer
 print('starting https server...')
 httpsd.serve_forever()
 ```
+
+## Adding tooling commands
+
+By default a service will not do any tooling routing for you but you can add helpful `lando` commands.
+
+```yaml
+tooling:
+  donet:
+    service: myservice
+```
+
+You can then invoke them on the command line.
+
+```bash
+lando dotnet
+```
+
+Lando tooling is actually pretty powerful so definitely check out [the rest](https://docs.lando.dev/config/tooling.html) of its cool features.
+
+## Adding routing
+
+By default a service will not do any proxy routing for you but you can add your own.
+
+```yaml
+proxy:
+  myservice:
+    - myapp.lndo.site
+    - something.else.local
+```
+
+Lando proxying is actually pretty powerful so definitely check out [the rest](https://docs.lando.dev/config/proxy.html) of its cool features.
