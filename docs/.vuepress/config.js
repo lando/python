@@ -30,24 +30,6 @@ module.exports = {
       },
       '/config.md',
       '/caveats.md',
-      {
-        text: 'Guides',
-        collapsible: true,
-        children: [
-          {
-            text: 'Adding more tooling commands',
-            link: '/adding-more-tooling.md',
-          },
-          {
-            text: 'Externally accessing services',
-            link: '/external-access.md',
-          },
-          {
-            text: 'Manually importing databases',
-            link: '/manually-importing-databases.md',
-          },
-        ],
-      },
       '/support.md',
       {text: 'Examples', link: 'https://github.com/lando/python/tree/main/examples'},
       {text: 'Release Notes', link: 'https://github.com/lando/python/releases'},
