@@ -26,7 +26,7 @@ services:
 *   **[3.7](https://hub.docker.com/r/_/python/)** **(default)**
 *   [3.6](https://hub.docker.com/r/_/python/)
 *   [3.5](https://hub.docker.com/r/_/python/)
-*   [custom](./../config/services.md#advanced)
+*   [custom](https://docs.lando.dev/config/services.html#advanced)
 
 ## Legacy versions
 
