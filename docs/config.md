@@ -18,7 +18,7 @@ services:
     command: tail -f /dev/null
 ```
 
-### Specifying a command
+## Specifying a command
 
 Note that if you *do not* define a `command` for this service, it will effectively be a "cli" container (e.g. it will not serve or run an application by default but will be available to run `python` commands against).
 
@@ -31,7 +31,7 @@ services:
     command: /app/my-server.py
 ```
 
-### Setting a port
+## Setting a port
 
 While we assume your `python` service is running on port `80`, we recognize that many `python` app's also run on port `8000` or otherwise. You can easily change our default to match whatever your app needs.
 
@@ -42,7 +42,7 @@ services:
     port: 8000
 ```
 
-### Using SSL
+## Using SSL
 
 Also note that `ssl: true` will only generate certs in the [default locations](https://docs.lando.dev/config/security.html). It is up to the user to use the certs and secure port correctly in their application like as in the `python` snippet below:
 
