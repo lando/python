@@ -5,9 +5,9 @@ description: Learn how to configure the Lando Python service.
 
 # Configuration
 
-Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](https://docs.lando.dev/config/services.html) to get a good handle on how the magicks work.
+Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](https://docs.lando.dev/core/v3/lando-service.html) to get a good handle on how the magicks work.
 
-Also note that options, in addition to the [build steps](https://docs.lando.dev/config/services.html#build-steps) and [overrides](https://docs.lando.dev/config/services.html#overrides) that are available to every service, are shown below:
+Also note that options, in addition to the [build steps](https://docs.lando.dev/core/v3/lando-service.html#build-steps) and [overrides](https://docs.lando.dev/core/v3/lando-service.html#overrides) that are available to every service, are shown below:
 
 ```yaml
 services:
@@ -44,7 +44,7 @@ services:
 
 ## Using SSL
 
-Also note that `ssl: true` will only generate certs in the [default locations](https://docs.lando.dev/config/security.html). It is up to the user to use the certs and secure port correctly in their application like as in the `python` snippet below:
+Also note that `ssl: true` will only generate certs in the [default locations](https://docs.lando.dev/core/v3/security.html). It is up to the user to use the certs and secure port correctly in their application like as in the `python` snippet below:
 
 ```yaml
 services:
@@ -78,7 +78,7 @@ You can then invoke them on the command line.
 lando dotnet
 ```
 
-Lando tooling is actually pretty powerful so definitely check out [the rest](https://docs.lando.dev/config/tooling.html) of its cool features.
+Lando tooling is actually pretty powerful so definitely check out [the rest](https://docs.lando.dev/core/v3/tooling.html) of its cool features.
 
 ## Adding routing
 
@@ -91,4 +91,4 @@ proxy:
     - something.else.local
 ```
 
-Lando proxying is actually pretty powerful so definitely check out [the rest](https://docs.lando.dev/config/proxy.html) of its cool features.
+Lando proxying is actually pretty powerful so definitely check out [the rest](https://docs.lando.dev/core/v3/proxy.html) of its cool features.
