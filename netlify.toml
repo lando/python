@@ -39,9 +39,9 @@
 # We need this so preview environments and the base site look ok on their own
 [[redirects]]
   from = "/"
-  to = "/python"
+  to = "/plugins/python"
   status = 200
 [[redirects]]
-  from = "/python/*"
+  from = "/plugins/python/*"
   to = "/:splat"
   status = 200
