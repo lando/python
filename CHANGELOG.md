@@ -1,8 +1,11 @@
+## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
+ * Make Python 3.12 available. [#35](https://github.com/lando/python/issues/35)
+
 ## v1.1.0 - [March 8, 2024](https://github.com/lando/python/releases/tag/v1.1.0)
   * Updated to latest database services.
 
 ## v1.0.0 - [December 7, 2023](https://github.com/lando/python/releases/tag/v1.0.0)
-    * Dialed fully for `lando update`
+  * Dialed fully for `lando update`
 
 ## v0.8.0 - [July 3, 2023](https://github.com/lando/python/releases/tag/v0.8.0)
   * Removed bundle-dependencies and version-bump-prompt from plugin.
