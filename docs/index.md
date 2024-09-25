@@ -8,7 +8,7 @@ next: ./config.html
 
 [Python](https://www.python.org/) is a programming language that lets you work more quickly and integrate your systems more effectively.
 
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/lando-service.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
+You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
 
 
 ```yaml
@@ -28,7 +28,7 @@ services:
 *   **[3.7](https://hub.docker.com/_/python)** **(default)**
 *   [3.6](https://hub.docker.com/_/python)
 *   [3.5](https://hub.docker.com/_/python)
-*   [custom](https://docs.lando.dev/core/v3/lando-service.html#overrides)
+*   [custom](https://docs.lando.dev/core/v3/services/lando.html#overrides)
 
 ## Legacy versions
 
