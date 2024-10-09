@@ -20,6 +20,7 @@ services:
 ## Supported versions
 
 *   [3](https://hub.docker.com/_/python)
+*   [3.13](https://hub.docker.com/_/python)
 *   [3.12](https://hub.docker.com/_/python)
 *   [3.11](https://hub.docker.com/_/python)
 *   [3.10](https://hub.docker.com/_/python)

@@ -1,4 +1,5 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
+ * Make Python 3.13 available. [#44](https://github.com/lando/python/issues/44)
 
 ## v1.2.0 - [September 25, 2024](https://github.com/lando/python/releases/tag/v1.2.0)
  * Make Python 3.12 available. [#35](https://github.com/lando/python/issues/35)
