@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+  * Updated lando/php to v1.4.0.
+
 ## v1.3.0 - [October 15, 2024](https://github.com/lando/python/releases/tag/v1.3.0)
  * Make Python 3.13 available. [#44](https://github.com/lando/python/issues/44)
 
