@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Updated release process to generate an edge release when stable releases are created.
+
 ## v1.3.0 - [October 15, 2024](https://github.com/lando/python/releases/tag/v1.3.0)
  * Make Python 3.13 available. [#44](https://github.com/lando/python/issues/44)
 
