@@ -32,7 +32,7 @@ lando ssh -s patch -c "python --version | grep 3.10.1"
 lando ssh -s defaults -c "curl http://localhost | grep OPENTHEPASTANDPRESENT"
 
 # Should not serve port 80 for cli
-lando ssh -s cli -c "curl http://localhost" || echo $? | grep 1
+lando ssh -s cli -c "curl http://localhost" || echo $? | grep 7
 ```
 
 Destroy tests
