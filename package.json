@@ -3,7 +3,7 @@
   "description": "A Lando plugin that provides a tight integration with python.",
   "version": "1.4.3",
   "author": "Mike Pirog @pirog",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": "lando/python",
   "bugs": "https://github.com/lando/python/issues/new/choose",
   "homepage": "https://github.com/lando/python",
